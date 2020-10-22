@@ -17,6 +17,7 @@ rm -r wine-tkg-git/
 mkdir thps
 export WINEPREFIX=$PWD/thps
 wine-tkg-5.17.2-g003d5833/bin/winecfg
+export WINE=$PWD/wine-tkg-5.17.2-g003d5833/bin/wine
 wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 chmod +x winetricks
 ./winetricks arial
