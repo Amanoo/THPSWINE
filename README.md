@@ -9,4 +9,22 @@
     mv *.mypatch wine-tkg-git/wine-tkg-userpatches/
     sed -i 's/_use_vkd3dlib="mainline"/_use_vkd3dlib="fork"/' wine-tkg-git/customization.cfg
     sed -i 's/_staging_version=""/_staging_version="003d5833"/' wine-tkg-git/customization.cfg
-    wine-tkg-git/non-makepkg-build.sh
+    cd wine-tkg-git
+    ./non-makepkg-build.sh
+
+ -> ###################################TkG##########was##########here
+When you are ready, press enter to continue.
+<Enter>
+
+
+HEAD is now at 2cf69bb5a5b dmband: Avoid cloning stream in parse_bands_list.
+ ==> WARNING: HALP! We got some hotfixes for your current tree!
+Do you want to apply them all with no further prompt?
+> Y/n : 
+<Enter>
+
+
+
+https://superuser.com/questions/585398/sending-simulated-keystrokes-in-bash
+expect
+https://likegeeks.com/expect-command/
