@@ -1,4 +1,7 @@
 # THPSWINE
+    #!/usr/bin/expect -f
+    set timeout -1
+    
     git clone https://github.com/Frogging-Family/wine-tkg-git.git
     cd wine-tkg-git/
     git checkout cad02b4753e7eb5177e7714c78b3c08e18cf5d32
@@ -10,7 +13,13 @@
     sed -i 's/_use_vkd3dlib="mainline"/_use_vkd3dlib="fork"/' wine-tkg-git/customization.cfg
     sed -i 's/_staging_version=""/_staging_version="003d5833"/' wine-tkg-git/customization.cfg
     cd wine-tkg-git
-    ./non-makepkg-build.sh
+    spawn ./non-makepkg-build.sh
+    
+    expect "When you are ready, press enter to continue.\r"
+    send -- "\r"
+    expect "Do you want to apply them all with no further prompt?\r> Y/n : \r"
+    send -- "\r"
+    expect eof
 
  -> ###################################TkG##########was##########here
 When you are ready, press enter to continue.
