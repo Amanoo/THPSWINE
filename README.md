@@ -47,7 +47,8 @@ https://likegeeks.com/expect-command/
     tar -xzf dxvk-1.7.2.tar.gz
     dxvk-1.7.2/setup_dxvk.sh install
 
-git clone https://github.com/z0z0z/mf-install
+    git clone https://github.com/z0z0z/mf-install
+    mf-install/mf-install.sh
 
 
     
