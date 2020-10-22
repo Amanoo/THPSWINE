@@ -39,3 +39,15 @@ Do you want to apply them all with no further prompt?
 https://superuser.com/questions/585398/sending-simulated-keystrokes-in-bash
 expect
 https://likegeeks.com/expect-command/
+
+    mkdir thps
+    export WINEPREFIX=$PWD/thps
+    WINEPREFIX= winecfg
+    wget https://github.com/doitsujin/dxvk/releases/download/v1.7.2/dxvk-1.7.2.tar.gz
+    tar -xzf dxvk-1.7.2.tar.gz
+    dxvk-1.7.2/setup_dxvk.sh install
+
+git clone https://github.com/z0z0z/mf-install
+
+
+    
