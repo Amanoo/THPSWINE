@@ -13,7 +13,6 @@ cd wine-tkg-git
 ./non-makepkg-build.sh
 cd ../..
 mv wine-tkg-git/wine-tkg-git/non-makepkg-builds/wine-tkg-staging-fsync-vkd3d-git-5.17.2.r4.g003d5833/ ./wine-tkg-5.17.2-g003d5833
-rm -r wine-tkg-git/
 mkdir thps
 export WINEPREFIX=$PWD/thps
 wine-tkg-5.17.2-g003d5833/bin/winecfg
