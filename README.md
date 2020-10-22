@@ -21,6 +21,8 @@ Install expect
     send -- "\r"
     expect "Do you want to apply them all with no further prompt?\r> Y/n : \r"
     send -- "\r"
+    expect "mypatch\rDo you want to install it/them? - Be careful with that ;)\r> N/y : \r"
+    send -- "y\r"
     expect eof
 
  -> ###################################TkG##########was##########here
@@ -33,6 +35,14 @@ HEAD is now at 2cf69bb5a5b dmband: Avoid cloning stream in parse_bands_list.
 Do you want to apply them all with no further prompt?
 > Y/n : 
 <Enter>
+
+
+/home/marco/Desktop/experimenteer/wine-tkg-git/wine-tkg-git/0001-server-Support-noname-named-pipes.mypatch
+/home/marco/Desktop/experimenteer/wine-tkg-git/wine-tkg-git/0002-msvcrt-Use-default-user-locale-when-only-codepage-is.mypatch
+/home/marco/Desktop/experimenteer/wine-tkg-git/wine-tkg-git/0003-msasn1-Fix-buffer-allocations.mypatch
+Do you want to install it/them? - Be careful with that ;)
+> N/y : 
+y<Enter>
 
 
 
