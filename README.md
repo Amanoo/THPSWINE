@@ -42,7 +42,7 @@ https://likegeeks.com/expect-command/
 
     mkdir thps
     export WINEPREFIX=$PWD/thps
-    WINEPREFIX= winecfg
+    winecfg
     wget https://github.com/doitsujin/dxvk/releases/download/v1.7.2/dxvk-1.7.2.tar.gz
     tar -xzf dxvk-1.7.2.tar.gz
     dxvk-1.7.2/setup_dxvk.sh install
